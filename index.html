@@ -16,7 +16,7 @@
 
 <!-- 트위터 카드: 웹페이지가 소셜미디어(트위터)로 공유될 때 우선적으로 활용되는 정보를 지정 -->
 <meta property="twitter:card" content="summary" /> <!-- twitter:card 페이지(카드)의 유형(e.g. summary, player) -->
-<meta property="twitter:site" content="Starbucks" />  <!-- twitter:site 속한 사이트의 이름 -->
+<meta property="twitter:site" content="Starbucks" /> <!-- twitter:site 속한 사이트의 이름 -->
 <meta property="twitter:title" content="Starbucks Coffee Korea" /> <!-- twitter:title 페이지의 이름(제목) -->
 <meta property="twitter:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." /> <!-- twitter:description 페이지의 간단한 설명 -->
 <meta property="twitter:image" content="./images/starbucks_seo.jpg" /> <!-- twitter:image 페이지의 대표 이미지 주소(URL) -->
@@ -30,6 +30,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet"> <!-- link 방식(병렬로 HTML쪽에서 외부의 CSS 파일을 가져오는 방식)으로 적용하려는 폰트를 main.css보다 상단에 추가 -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!-- 여러 가지 icon을 페이지에서 활용할 수 있는 material icon(material.io), icon은 하나의 글씨처럼 취급이 되고, 기본 크기는 24px이다 -->
   <!-- link 방식(병렬로 HTML쪽에서 외부의 CSS 파일을 가져오는 방식)으로 main.css보다 상단에 추가 --> <!-- class 이름이 material-icons로 일치해야 text(login)를 통해서 일치하는 icon이 해당하는 태그 영역에 잘 출력이 된다 -->
+  <link rel="stylesheet" href="./css/common.css"> <!-- 여러 페이지에서 사용하는 Header & Footer에 대한 main.css의 공통적인 내용을 common.css에 작성했기 때문에 main.css를 불러오기 전에 common.css를 불러온다 -->
   <link rel="stylesheet" href="./css/main.css" /> <!-- link 태그로 css 폴더 내의 main.css 파일 연결 -->
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -49,6 +50,7 @@
   <!-- 외부에서 가져온 ScrollMagic 라이브러리를 main.js를 호출하는 스크립트 태그 위쪽에 작성해서 프로젝트에 연결한 후에 그 내용으로 main.js에 추가적인 코드 작성 가능 --> <!-- cdnjs.com 참고 -->
 
   <script defer src="./js/youtube.js"></script> <!-- script 태그 내의 Javascript의 src(source)는 주변의 JS 폴더의 youtube.js이다 --> <!-- youtube.js에서는 HTML의 태그를 다루어야 하기 때문에 defer 속성을 이용해서 HTML의 구조가 모두 해석이 되면 main.js가 정상적으로 동작되도록 한다 -->
+  <script defer src="./js/common.js"></script> <!-- 여러 페이지에서 사용하는 Header & Footer에 대한 main.js의 공통적인 내용을 common.js에 작성했기 때문에 main.js를 불러오기 전에 common.js를 불러온다 -->
   <script defer src="./js/main.js"></script> <!-- script 태그 내의 Javascript의 src(source)는 주변의 JS 폴더의 main.js이다 --> <!-- main.js에서는 HTML의 태그를 다루어야 하기 때문에 defer 속성을 이용해서 HTML의 구조가 모두 해석이 되면 main.js가 정상적으로 동작되도록 한다 -->
 </head>
 <body>
